@@ -1,56 +1,8 @@
-<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="500" fill="#fafafa"/>
-  <rect x="25" y="25" width="1150" height="450" rx="18" fill="#ffffff" stroke="#222" stroke-width="4"/>
+![Assignment 11.2 Banner](assets/default.png)
 
-  <text x="60" y="80" font-family="Comic Sans MS, Arial" font-size="34" fill="#111">
-    Whiteboard: Best Time to Buy and Sell Stock
-  </text>
+![Stock Whiteboard](assets/stock_whiteboard.svg)
 
-  <line x1="60" y1="105" x2="1130" y2="105" stroke="#111" stroke-width="3"/>
-
-  <text x="80" y="165" font-family="Comic Sans MS, Arial" font-size="30" fill="#111">
-    Prices:
-  </text>
-
-  <g font-family="Comic Sans MS, Arial" font-size="34" fill="#111">
-    <text x="220" y="165">7</text>
-    <text x="340" y="165">1</text>
-    <text x="460" y="165">5</text>
-    <text x="580" y="165">3</text>
-    <text x="700" y="165">6</text>
-    <text x="820" y="165">4</text>
-  </g>
-
-  <g stroke="#0078D4" stroke-width="5" fill="none">
-    <circle cx="350" cy="153" r="35"/>
-    <path d="M350 190 L350 265"/>
-    <path d="M340 250 L350 270 L360 250"/>
-  </g>
-
-  <text x="285" y="310" font-family="Comic Sans MS, Arial" font-size="28" fill="#0078D4">
-    Buy Low
-  </text>
-
-  <g stroke="#E63946" stroke-width="5" fill="none">
-    <circle cx="710" cy="153" r="35"/>
-    <path d="M710 190 L710 265"/>
-    <path d="M700 250 L710 270 L720 250"/>
-  </g>
-
-  <text x="640" y="310" font-family="Comic Sans MS, Arial" font-size="28" fill="#E63946">
-    Sell High Later
-  </text>
-
-  <text x="80" y="390" font-family="Comic Sans MS, Arial" font-size="32" fill="#111">
-    Profit = Sell Price - Buy Price = 6 - 1 = 5
-  </text>
-
-  <text x="80" y="440" font-family="Comic Sans MS, Arial" font-size="26" fill="#444">
-    One pass: track minPrice and maxProfit as we move left to right.
-  </text>
-</svg>
-
-![Assignment 11.2 Banner](assets/assignment11_2_banner.png)
+![Linked List Whiteboard](assets/linked_list_whiteboard.svg)
 
 # 🚀 Assignment 11.2 — Algorithms & Data Structures
 
@@ -441,4 +393,4 @@ Reversed List:
 - 🇺🇸 U.S. Army Veteran  
 - Microsoft Software & Systems Academy  
 - AZ‑104 Certified  
-- Aspiring Software Engineer  
+- Aspiring Software Engineer
