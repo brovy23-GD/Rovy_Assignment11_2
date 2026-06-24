@@ -1,4 +1,5 @@
-<img src="assets/nextrep_banner.png" width="100%" />
+![NextRep Banner](nextrep_banner.png)
+
 
 # 🚀 NextRep Performance Tracker — Elite Athlete Performance App
 
