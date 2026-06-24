@@ -1,10 +1,6 @@
 ![Assignment 11.2 Banner](assets/default.png)
 
-
-
 # 🚀 Assignment 11.2 — Algorithms & Data Structures
-
-
 
 ![Language](https://img.shields.io/badge/Language-C%23-178600?style=for-the-badge)
 ![Framework](https://img.shields.io/badge/.NET-10.0-purple?style=for-the-badge)
@@ -66,6 +62,7 @@ Rovy.Assignment11.2
 
 ## 🧑‍🏫 Whiteboard Walkthrough
 
+![Stock Whiteboard](assets/stock_whiteboard.svg)
 
 ```text
 Prices: [7, 1, 5, 3, 6, 4]
@@ -158,15 +155,15 @@ RETURN maxProfit
 ```csharp
 public static int MaxProfit(int[] prices)
 {
-    var minPrice = int.MaxValue;
-    var maxProfit = 0;
+    int minPrice = int.MaxValue;
+    int maxProfit = 0;
 
-    foreach (var price in prices)
+    foreach (int price in prices)
     {
         if (price < minPrice)
             minPrice = price;
 
-        var profit = price - minPrice;
+        int profit = price - minPrice;
 
         if (profit > maxProfit)
             maxProfit = profit;
@@ -194,6 +191,7 @@ public static int MaxProfit(int[] prices)
 
 ## 🧑‍🏫 Whiteboard Walkthrough
 
+![Linked List Whiteboard](assets/linked_list_whiteboard.svg)
 
 ### Before
 
@@ -281,11 +279,11 @@ RETURN prev
 public static ListNode ReverseList(ListNode head)
 {
     ListNode prev = null;
-    var curr = head;
+    ListNode curr = head;
 
     while (curr != null)
     {
-        var next = curr.Next;
+        ListNode next = curr.Next;
 
         curr.Next = prev;
 
@@ -391,4 +389,4 @@ Reversed List:
 - 🇺🇸 U.S. Army Veteran  
 - Microsoft Software & Systems Academy  
 - AZ‑104 Certified  
-- Aspiring Software Engineer  
+- Aspiring Software Engineer
