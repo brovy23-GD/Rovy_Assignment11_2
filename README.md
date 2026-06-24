@@ -1,8 +1,6 @@
 ![Assignment 11.2 Banner](assets/default.png)
 
-![Stock Whiteboard](assets/stock_whiteboard.svg)
 
-![Linked List Whiteboard](assets/linked_list_whiteboard.svg)
 
 # 🚀 Assignment 11.2 — Algorithms & Data Structures
 
@@ -68,7 +66,6 @@ Rovy.Assignment11.2
 
 ## 🧑‍🏫 Whiteboard Walkthrough
 
-![Stock Whiteboard](assets/stock_whiteboard.svg)
 
 ```text
 Prices: [7, 1, 5, 3, 6, 4]
@@ -197,7 +194,6 @@ public static int MaxProfit(int[] prices)
 
 ## 🧑‍🏫 Whiteboard Walkthrough
 
-![Linked List Whiteboard](assets/linked_list_whiteboard.svg)
 
 ### Before
 
