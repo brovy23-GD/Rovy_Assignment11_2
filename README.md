@@ -1,45 +1,84 @@
-<img src="assets/assignment11_banner.png" width="100%" />
+<img src="assets/nextrep_banner.png" width="100%" />
 
-
-
-
-# 🚀 Rovy Assignment11_4 — Elite Engineering Build
+# 🚀 NextRep Performance Tracker — Elite Athlete Performance App
 
 ![Language](https://img.shields.io/badge/Language-C%23-178600?style=for-the-badge)
 ![Framework](https://img.shields.io/badge/.NET-8.0-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=for-the-badge)
-![Focus](https://img.shields.io/badge/Focus-Algorithms%20%26%20Data%20Structures-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In_Development-blue?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Workout%20Tracking%20%26%20Athlete%20Performance-red?style=for-the-badge)
 
 ---
 
 ## 🔥 Executive Summary  
-This project demonstrates clean engineering discipline, optimized C# solutions, and professional‑grade documentation.
+NextRep Performance Tracker is a high‑discipline workout engine built for athletes who demand structure, consistency, and measurable progress.  
+Every rep counts — and this app ensures every rep is tracked, analyzed, and used to build a stronger athlete.
+
+This system focuses on clean engineering, optimized C# architecture, and a professional‑grade user experience.
 
 ---
 
-## 🧠 Problem Breakdown  
-### Problem 1 — Title Here  
-**Category:** Algorithm / Data Structure  
+## 🧠 Core Features  
+### **Workout Logging Engine**  
+- Track sets, reps, weight, and intensity  
+- Auto‑calculate volume, PRs, and progression  
+- Session‑based or exercise‑based logging  
+
+### **Performance Analytics**  
+- Volume trends  
+- Strength progression  
+- Consistency metrics  
+- Weekly and monthly breakdowns  
+
+### **Exercise Library**  
+- Categorized by muscle group  
+- Includes cues, form notes, and difficulty levels  
+
+### **Athlete Profile System**  
+- Bodyweight tracking  
+- Goal setting  
+- Training phase management  
+
+---
+
+## 🧩 Problem Breakdown  
+### Problem 1 — Workout Session Modeling  
+**Category:** Data Modeling / Architecture  
 **Summary:**  
-Short explanation.
+Design a clean, scalable model for workouts, exercises, sets, and metrics.
 
 **Complexity:**  
 | Operation | Complexity |
 |----------|------------|
 | Time     | **O(n)**   |
-| Space    | **O(1)**   |
+| Space    | **O(n)**   |
 
 **Solution:**  
 \\\csharp
-// Your solution here
+public class WorkoutSession
+{
+    public DateTime Date { get; set; }
+    public List<ExerciseLog> Exercises { get; set; } = new();
+}
+
+public class ExerciseLog
+{
+    public string Name { get; set; }
+    public List<SetLog> Sets { get; set; } = new();
+}
+
+public class SetLog
+{
+    public int Reps { get; set; }
+    public double Weight { get; set; }
+}
 \\\
 
 ---
 
-### Problem 2 — Title Here  
-**Category:** Algorithm / Data Structure  
+### Problem 2 — Performance Trend Calculation  
+**Category:** Algorithms / Data Processing  
 **Summary:**  
-Short explanation.
+Compute volume, PRs, and progression across sessions.
 
 **Complexity:**  
 | Operation | Complexity |
@@ -49,7 +88,16 @@ Short explanation.
 
 **Solution:**  
 \\\csharp
-// Your solution here
+double CalculateTotalVolume(WorkoutSession session)
+{
+    double total = 0;
+
+    foreach (var exercise in session.Exercises)
+        foreach (var set in exercise.Sets)
+            total += set.Weight * set.Reps;
+
+    return total;
+}
 \\\
 
 ---
@@ -57,21 +105,31 @@ Short explanation.
 ## 🧭 Architecture Overview  
 \\\mermaid
 flowchart TD
-    A[Input] --> B[Algorithm Logic]
-    B --> C[Data Structure]
-    C --> D[Output]
+    A[User Input] --> B[Workout Logging Engine]
+    B --> C[Performance Analytics]
+    C --> D[Data Storage]
+    D --> E[Progress Visualization]
 \\\
 
 ---
 
 ## 🧪 How to Run  
-1. Clone the repo  
-2. Open in Visual Studio  
-3. Build  
-4. Run (F5)
+1. Clone the repository  
+2. Open the solution in Visual Studio  
+3. Build the project  
+4. Run (F5)  
+5. Begin logging workouts and tracking performance
 
 ---
 
-## 👤 Author — Bobby Rovy  
-U.S. Army Veteran • C# / .NET Developer • MSSA Graduate  
-Family‑first. Adaptable. Professional.
+## 📁 Project Structure  
+```
+NextRep_Performance_Tracker/
+│
+├── Models/
+│   ├── WorkoutSession.cs
+│   ├── ExerciseLog.cs
+│   └── SetLog.cs
+│
+├── Services/
+│   ├── Analytics
