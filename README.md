@@ -1,4 +1,5 @@
-<img src="assets/banner.png" width="100%" />
+![Banner](assets/banner.png)
+
 
 
 # 🚀 Rovy Assignment11_4 — Elite Engineering Build
