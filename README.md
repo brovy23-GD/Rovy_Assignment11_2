@@ -331,11 +331,11 @@ classDiagram
 
 ```mermaid
 graph LR
-    A[Best Time to Buy and Sell Stock] --> B[Time O(n)]
-    A --> C[Space O(1)]
+    A[Best Time to Buy and Sell Stock] --> B["Time O(n)"]
+    A --> C["Space O(1)"]
 
-    D[Reverse Linked List] --> E[Time O(n)]
-    D --> F[Space O(1)]
+    D[Reverse Linked List] --> E["Time O(n)"]
+    D --> F["Space O(1)"]
 ```
 
 ---
